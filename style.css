@@ -1,0 +1,154 @@
+ body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #61066d, rgb(6, 22, 90), rgb(6, 73, 6));
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.container {
+    max-width: 100%;
+    width: 90%;
+    margin: auto;
+    background: rgb(130, 150, 153);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+
+.title {
+    text-align: center;
+    color: #021b02;
+    font-size: 1.8rem;
+}
+
+#test-area {
+    margin-bottom: 20px;
+}
+
+#random-text {
+    font-size: 1rem; 
+    margin-bottom: 10px;
+    background-color: #e7f3fe;
+    padding: 10px;
+    border: 1px solid #b8daff;
+    border-radius: 5px;
+}
+
+#typing-area {
+    width: 97%;
+    height: 150px; 
+    padding: 10px;
+    font-size: 1rem; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #d5ece6;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.button:disabled {
+    background-color: #ccc;
+}
+
+
+#results {
+    margin-top: 20px;
+    background: rgb(130, 150, 153);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem; 
+}
+
+#progress {
+    background: #e0e0e0;
+    border-radius: 5px;
+    height: 10px;
+    margin-top: 10px;
+}
+
+#progress-bar {
+    background: #4CAF50;
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #random-text, #typing-area, .button, #results {
+        font-size: 0.9rem; 
+    }
+
+    #typing-area {
+        height: 120px; 
+    }
+
+    .button {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+
+    .title {
+        font-size: 1.7rem;
+    }
+
+    #typing-area {
+        height: 130px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        max-width: 800px;
+        padding: 30px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    #random-text {
+        font-size: 1.1rem;
+    }
+
+    #typing-area {
+        height: 180px;
+    }
+
+    .button {
+        padding: 12px 18px;
+        font-size: 1.1rem;
+    }
+}
